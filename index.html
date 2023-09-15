@@ -4,8 +4,64 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Welcome to Mongo Course</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+
+		<link rel="stylesheet" href="style.css" />
 	</head>
-	<body>
+	<body class="bg-info-subtle">
 		<h1>First Project in MongoDB course</h1>
+		<div class="text-dark p-3">
+			<h2 class="text-start">English words learnt today</h2>
+			<h5>Bewildered</h5>
+			<div class="d-flex gap-3">
+				<p>Confused, surprised, perplexed or puzzled</p>
+				<div>
+					<img
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6x1ldGM5PFaPCijCTi2eTpAe9OOGoiTAwGg&usqp=CAU"
+						alt="image of a person who is bewildered"
+						class="bewildered"
+					/>
+				</div>
+				<div>
+					<p class="p-2">Examples:</p>
+					<ul class="">
+						<li>
+							our classmates were bewildered with the decison made by the
+							Professor
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	
+
+		<script>
+			const phrase = 'This is a console log';
+
+			console.log({ phrase });
+
+			// Sum of all elements in an array 
+			const sumOfElements =([a,...b]) =>{
+				const arr= [a, ...b];
+				let sum = 0;
+
+				for(let el in arr){
+					sum += arr[el]
+				}
+				return sum;
+			}
+
+			const sum = sumOfElements([4,5,6,7,8]);
+
+			console.log({sum})
+
+			
+		</script>
+	
 	</body>
 </html>
